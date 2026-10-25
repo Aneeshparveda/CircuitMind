@@ -1,0 +1,14 @@
+[tool.flake8]
+max-line-length = 120
+exclude = ["node_modules", "dist", ".git", "__pycache__"]
+# E501: line too long (handled by formatter)
+# W503: line break before binary operator (conflicts with PEP 8)
+ignore = ["E501", "W503"]
+# Check for print() statements, debugger, breakpoint
+select = ["E", "F", "W", "T"]
+
+[tool.bandit]
+exclude_dirs = ["tests", "node_modules", "dist"]
+# B101: assert used (fine in tests)
+# B110: try except pass (intentional in some places)
+skips = ["B101", "B110"]

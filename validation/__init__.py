@@ -1,0 +1,1 @@
+# CircuitMind — Validation Layer

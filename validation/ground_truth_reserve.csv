@@ -1,0 +1,101 @@
+board_id,root_cause,scenario,split
+BRD_0500,U3,U3 Buck Failure,reserve
+BRD_0501,Q1,Q1 MOSFET Short,reserve
+BRD_0502,F1,F1 Blown,reserve
+BRD_0503,J1,J1 USB Short,reserve
+BRD_0504,R12,R12 Thermistor Open,reserve
+BRD_0505,R12,R12 Thermistor Open,reserve
+BRD_0506,F1,F1 Blown,reserve
+BRD_0507,J1,J1 USB Short,reserve
+BRD_0508,U3,U3 Buck Failure,reserve
+BRD_0509,U1,U1 MCU Dead,reserve
+BRD_0510,C1,C1 Bulk Cap Open,reserve
+BRD_0511,U4,U4 WiFi Dead,reserve
+BRD_0512,U2,U2 LDO Failure,reserve
+BRD_0513,J1,J1 USB Short,reserve
+BRD_0514,U5,U5 SPI Flash Open,reserve
+BRD_0515,J1,J1 USB Short,reserve
+BRD_0516,U3,U3 Buck Failure,reserve
+BRD_0517,Q1,Q1 MOSFET Short,reserve
+BRD_0518,U4,U4 WiFi Dead,reserve
+BRD_0519,R1,R1 Pullup Open,reserve
+BRD_0520,U1,U1 MCU Dead,reserve
+BRD_0521,U2,U2 LDO Failure,reserve
+BRD_0522,U1,U1 MCU Dead,reserve
+BRD_0523,U6,I2C Bus Short,reserve
+BRD_0524,C2,C2 Decoupling Short,reserve
+BRD_0525,U5,U5 SPI Flash Open,reserve
+BRD_0526,A1,A1 Antenna Disconnected,reserve
+BRD_0527,J1,J1 USB Short,reserve
+BRD_0528,R1,R1 Pullup Open,reserve
+BRD_0529,L1,L1 Open,reserve
+BRD_0530,R1,R1 Pullup Open,reserve
+BRD_0531,A1,A1 Antenna Disconnected,reserve
+BRD_0532,Q1,Q1 MOSFET Short,reserve
+BRD_0533,L1,L1 Open,reserve
+BRD_0534,R12,R12 Thermistor Open,reserve
+BRD_0535,C1,C1 Bulk Cap Open,reserve
+BRD_0536,Q1,Q1 MOSFET Short,reserve
+BRD_0537,R1,R1 Pullup Open,reserve
+BRD_0538,C1,C1 Bulk Cap Open,reserve
+BRD_0539,C2,C2 Decoupling Short,reserve
+BRD_0540,U4,U4 WiFi Dead,reserve
+BRD_0541,L1,L1 Open,reserve
+BRD_0542,U6,I2C Bus Short,reserve
+BRD_0543,A1,A1 Antenna Disconnected,reserve
+BRD_0544,U4,U4 WiFi Dead,reserve
+BRD_0545,U4,U4 WiFi Dead,reserve
+BRD_0546,J1,J1 USB Short,reserve
+BRD_0547,U6,I2C Bus Short,reserve
+BRD_0548,L1,L1 Open,reserve
+BRD_0549,U3,U3 Buck Failure,reserve
+BRD_0550,C2,C2 Decoupling Short,reserve
+BRD_0551,R12,R12 Thermistor Open,reserve
+BRD_0552,U5,U5 SPI Flash Open,reserve
+BRD_0553,Q1,Q1 MOSFET Short,reserve
+BRD_0554,C2,C2 Decoupling Short,reserve
+BRD_0555,Q1,Q1 MOSFET Short,reserve
+BRD_0556,C1,C1 Bulk Cap Open,reserve
+BRD_0557,U5,U5 SPI Flash Open,reserve
+BRD_0558,A1,A1 Antenna Disconnected,reserve
+BRD_0559,U4,U4 WiFi Dead,reserve
+BRD_0560,U5,U5 SPI Flash Open,reserve
+BRD_0561,Q1,Q1 MOSFET Short,reserve
+BRD_0562,U2,U2 LDO Failure,reserve
+BRD_0563,C2,C2 Decoupling Short,reserve
+BRD_0564,U2,U2 LDO Failure,reserve
+BRD_0565,J1,J1 USB Short,reserve
+BRD_0566,U6,I2C Bus Short,reserve
+BRD_0567,U1,U1 MCU Dead,reserve
+BRD_0568,Q1,Q1 MOSFET Short,reserve
+BRD_0569,J1,J1 USB Short,reserve
+BRD_0570,F1,F1 Blown,reserve
+BRD_0571,U6,I2C Bus Short,reserve
+BRD_0572,L1,L1 Open,reserve
+BRD_0573,U1,U1 MCU Dead,reserve
+BRD_0574,A1,A1 Antenna Disconnected,reserve
+BRD_0575,F1,F1 Blown,reserve
+BRD_0576,L1,L1 Open,reserve
+BRD_0577,L1,L1 Open,reserve
+BRD_0578,U6,I2C Bus Short,reserve
+BRD_0579,U3,U3 Buck Failure,reserve
+BRD_0580,U2,U2 LDO Failure,reserve
+BRD_0581,C2,C2 Decoupling Short,reserve
+BRD_0582,F1,F1 Blown,reserve
+BRD_0583,L1,L1 Open,reserve
+BRD_0584,A1,A1 Antenna Disconnected,reserve
+BRD_0585,U2,U2 LDO Failure,reserve
+BRD_0586,C2,C2 Decoupling Short,reserve
+BRD_0587,U4,U4 WiFi Dead,reserve
+BRD_0588,U6,I2C Bus Short,reserve
+BRD_0589,U6,I2C Bus Short,reserve
+BRD_0590,R12,R12 Thermistor Open,reserve
+BRD_0591,U4,U4 WiFi Dead,reserve
+BRD_0592,F1,F1 Blown,reserve
+BRD_0593,U6,I2C Bus Short,reserve
+BRD_0594,A1,A1 Antenna Disconnected,reserve
+BRD_0595,U5,U5 SPI Flash Open,reserve
+BRD_0596,A1,A1 Antenna Disconnected,reserve
+BRD_0597,C2,C2 Decoupling Short,reserve
+BRD_0598,U1,U1 MCU Dead,reserve
+BRD_0599,U6,I2C Bus Short,reserve

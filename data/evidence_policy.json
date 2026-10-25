@@ -1,0 +1,19 @@
+{
+  "weights": {
+    "history": 0.35,
+    "net": 0.30,
+    "topology": 0.20,
+    "criticality": 0.10,
+    "category": 0.05
+  },
+  "category_weights": {
+    "IC": 100,
+    "Connector": 90,
+    "Transistor": 80,
+    "Inductor": 70,
+    "Capacitor": 50,
+    "Resistor": 30
+  },
+  "uncertainty_gap": 15.0,
+  "notes_bonus": 10.0
+}

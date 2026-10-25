@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "description": "Fault-mode library. Each rule maps a component category to ordered fault-mode candidates. The first mode whose criteria match the observed evidence is assigned to a hypothesis (component + fault mode). Assignment is deterministic and does not alter the evidence ranking.",
+  "rules": [
+    {
+      "categories": ["IC", "Oscillator"],
+      "fallback": { "code": "DEGRADED", "label": "degraded / suspect", "verification": "Measure the rail and re-verify functional tests after reseating", "mechanism": "component behavior is outside specification without a dominant single mode" },
+      "fault_modes": [
+        { "code": "OUTPUT_UNDERVOLTAGE", "label": "output undervoltage", "match": { "error_codes": ["VAL"], "domains": ["POWER"], "direction": "low" }, "verification": "Measure output rail under rated load and compare against the expected window", "mechanism": "an output undervoltage starves every downstream functional block that depends on this rail" },
+        { "code": "OUTPUT_OVERVOLTAGE", "label": "output overvoltage", "match": { "error_codes": ["VAL"], "domains": ["POWER"], "direction": "high" }, "verification": "Measure output rail under no-load and rated load; confirm regulation", "mechanism": "an output overvoltage stresses all downstream loads and may trip protection" },
+        { "code": "SHORTED_OUTPUT", "label": "shorted output / low impedance", "match": { "error_codes": ["SHT"] }, "verification": "Isolate the component from the rail and measure impedance to ground", "mechanism": "a short pulls the rail low and propagates as a cascade to dependents" },
+        { "code": "OPEN_JOINT", "label": "open pin / cold solder", "match": { "error_codes": ["OPN"] }, "verification": "Visual inspection plus continuity from pin to pad", "mechanism": "an open connection removes the component's function from the circuit without a short" },
+        { "code": "FUNCTIONAL_FAILURE", "label": "functional failure (no response / no boot)", "match": { "error_codes": ["FNC"] }, "verification": "Verify clock, reset, and supply at the device, then re-run the functional test", "mechanism": "the device is powered but not responding; function is lost without a direct rail deviation" }
+      ]
+    },
+    {
+      "categories": ["Inductor"],
+      "fallback": { "code": "SUSPECT", "label": "suspect inductor", "verification": "Measure DC resistance across the inductor and inspect the solder joints", "mechanism": "inductor behavior is outside expectation without a dominant single mode" },
+      "fault_modes": [
+        { "code": "OPEN_CIRCUIT", "label": "open circuit", "match": { "error_codes": ["OPN"] }, "verification": "DC resistance check across the part (expect near-zero ohms)", "mechanism": "an open inductor interrupts the rail path entirely, so all downstream loads lose supply" },
+        { "code": "SATURATION", "label": "saturated / partial degradation", "match": { "error_codes": ["VAL"], "direction": "low" }, "verification": "Measure the rail under load; a saturated inductor sags under current", "mechanism": "partial conduction keeps the rail present but unable to hold regulation under load" },
+        { "code": "SHORTED", "label": "shorted winding", "match": { "error_codes": ["SHT"] }, "verification": "Impedance to ground with the part isolated", "mechanism": "a shorted winding bypasses the inductor's filtering behavior" }
+      ]
+    },
+    {
+      "categories": ["Capacitor"],
+      "fallback": { "code": "DEGRADED_CAPACITANCE", "label": "degraded capacitance", "verification": "Capacitance and ESR measurement with the part removed", "mechanism": "a drifted capacitor weakens filtering without hard failure" },
+      "fault_modes": [
+        { "code": "SHORTED", "label": "shorted / cracked body", "match": { "error_codes": ["SHT"] }, "verification": "Impedance to ground with the part isolated", "mechanism": "a cracked capacitor can short the rail it decouples, cascading to every dependent" },
+        { "code": "OPEN_SOLDER", "label": "open / tombstoned", "match": { "error_codes": ["OPN"] }, "verification": "Visual inspection and continuity from pad to pad", "mechanism": "an open capacitor removes its decoupling; ripple appears under load" },
+        { "code": "DEGRADED_CAPACITANCE", "label": "degraded capacitance", "match": { "error_codes": ["VAL"] }, "verification": "Capacitance and ESR measurement with the part removed", "mechanism": "a drifted capacitor weakens filtering without hard failure" }
+      ]
+    },
+    {
+      "categories": ["Resistor"],
+      "fallback": { "code": "DRIFT", "label": "value drift", "verification": "Measure resistance with the part isolated", "mechanism": "the resistor is present but out of tolerance" },
+      "fault_modes": [
+        { "code": "OPEN_CIRCUIT", "label": "open circuit", "match": { "error_codes": ["OPN", "FNC"] }, "verification": "DC resistance check (expect the marked value)", "mechanism": "an open resistor removes bias or pull-up function from the net" },
+        { "code": "DRIFT", "label": "value drift", "match": { "error_codes": ["VAL"] }, "verification": "Measure resistance with the part isolated", "mechanism": "the resistor is present but out of tolerance" }
+      ]
+    },
+    {
+      "categories": ["Transistor"],
+      "fallback": { "code": "GATE_DRIVE_FAILURE", "label": "gate-drive / switching failure", "verification": "Verify gate drive and measure drain-source behavior with the load disconnected", "mechanism": "the transistor is not switching as commanded" },
+      "fault_modes": [
+        { "code": "SHORTED", "label": "shorted drain-source", "match": { "error_codes": ["SHT"] }, "verification": "Drain-source resistance with the device off", "mechanism": "a shorted device stays on regardless of gate state" },
+        { "code": "OPEN", "label": "open channel", "match": { "error_codes": ["OPN"] }, "verification": "Continuity check with the device on", "mechanism": "an open channel never conducts, so the load stays off" },
+        { "code": "GATE_DRIVE_FAILURE", "label": "gate-drive / switching failure", "match": { "error_codes": ["FNC"] }, "verification": "Verify gate drive and measure drain-source behavior with the load disconnected", "mechanism": "the transistor is not switching as commanded" }
+      ]
+    },
+    {
+      "categories": ["Connector"],
+      "fallback": { "code": "CONTACT_DEGRADATION", "label": "contact degradation", "verification": "Inspect the connector and verify continuity across each pin", "mechanism": "a marginal contact produces intermittent or degraded signals" },
+      "fault_modes": [
+        { "code": "PIN_SHORT", "label": "pin short", "match": { "error_codes": ["SHT"] }, "verification": "Continuity between adjacent pins with power removed", "mechanism": "a shorted connector pin can back-feed or sink an entire rail" },
+        { "code": "DISCONNECTED", "label": "disconnected / open pin", "match": { "error_codes": ["OPN", "VAL"] }, "verification": "Continuity from connector pin to board pad", "mechanism": "an open pin removes the external supply or signal path" }
+      ]
+    },
+    {
+      "categories": ["Protection"],
+      "fallback": { "code": "OPENED", "label": "opened (protection trip)", "verification": "Continuity across the protective element; verify the load for the cause before replacement", "mechanism": "the protective element has opened — either by design (overcurrent) or failure" },
+      "fault_modes": [
+        { "code": "OPENED", "label": "opened (protection trip)", "match": { "error_codes": ["OPN", "VAL"] }, "verification": "Continuity across the protective element; verify the load for the cause before replacement", "mechanism": "the protective element has opened — either by design (overcurrent) or failure" }
+      ]
+    },
+    {
+      "categories": ["Antenna"],
+      "fallback": { "code": "OPEN_FEED", "label": "open feed / disconnected", "verification": "Continuity from the radio port to the antenna feed point", "mechanism": "an open feed drops radiated power while the radio itself may be healthy" },
+      "fault_modes": [
+        { "code": "OPEN_FEED", "label": "open feed / disconnected", "match": { "error_codes": ["VAL"] }, "verification": "Continuity from the radio port to the antenna feed point", "mechanism": "an open feed drops radiated power while the radio itself may be healthy" }
+      ]
+    }
+  ],
+  "default_fallback": { "code": "DEGRADED", "label": "degraded / suspect", "verification": "Isolate the component and verify its characteristic behavior", "mechanism": "component behavior is outside specification without a dominant single mode" }
+}

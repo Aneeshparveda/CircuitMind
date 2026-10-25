@@ -1,0 +1,101 @@
+board_id,root_cause,scenario,split
+BRD_0400,U2,U2 LDO Failure,blind
+BRD_0401,U5,U5 SPI Flash Open,blind
+BRD_0402,L1,L1 Open,blind
+BRD_0403,Q1,Q1 MOSFET Short,blind
+BRD_0404,U1,U1 MCU Dead,blind
+BRD_0405,U1,U1 MCU Dead,blind
+BRD_0406,J1,J1 USB Short,blind
+BRD_0407,A1,A1 Antenna Disconnected,blind
+BRD_0408,U4,U4 WiFi Dead,blind
+BRD_0409,U1,U1 MCU Dead,blind
+BRD_0410,R12,R12 Thermistor Open,blind
+BRD_0411,U5,U5 SPI Flash Open,blind
+BRD_0412,U6,I2C Bus Short,blind
+BRD_0413,R1,R1 Pullup Open,blind
+BRD_0414,R12,R12 Thermistor Open,blind
+BRD_0415,U3,U3 Buck Failure,blind
+BRD_0416,Q1,Q1 MOSFET Short,blind
+BRD_0417,C1,C1 Bulk Cap Open,blind
+BRD_0418,J1,J1 USB Short,blind
+BRD_0419,U2,U2 LDO Failure,blind
+BRD_0420,F1,F1 Blown,blind
+BRD_0421,A1,A1 Antenna Disconnected,blind
+BRD_0422,U4,U4 WiFi Dead,blind
+BRD_0423,Q1,Q1 MOSFET Short,blind
+BRD_0424,R1,R1 Pullup Open,blind
+BRD_0425,U6,I2C Bus Short,blind
+BRD_0426,R1,R1 Pullup Open,blind
+BRD_0427,U5,U5 SPI Flash Open,blind
+BRD_0428,C1,C1 Bulk Cap Open,blind
+BRD_0429,U6,I2C Bus Short,blind
+BRD_0430,U5,U5 SPI Flash Open,blind
+BRD_0431,J1,J1 USB Short,blind
+BRD_0432,C1,C1 Bulk Cap Open,blind
+BRD_0433,R1,R1 Pullup Open,blind
+BRD_0434,F1,F1 Blown,blind
+BRD_0435,R12,R12 Thermistor Open,blind
+BRD_0436,R12,R12 Thermistor Open,blind
+BRD_0437,R1,R1 Pullup Open,blind
+BRD_0438,U1,U1 MCU Dead,blind
+BRD_0439,R12,R12 Thermistor Open,blind
+BRD_0440,A1,A1 Antenna Disconnected,blind
+BRD_0441,U5,U5 SPI Flash Open,blind
+BRD_0442,U1,U1 MCU Dead,blind
+BRD_0443,F1,F1 Blown,blind
+BRD_0444,U6,I2C Bus Short,blind
+BRD_0445,J1,J1 USB Short,blind
+BRD_0446,L1,L1 Open,blind
+BRD_0447,R12,R12 Thermistor Open,blind
+BRD_0448,U4,U4 WiFi Dead,blind
+BRD_0449,F1,F1 Blown,blind
+BRD_0450,R1,R1 Pullup Open,blind
+BRD_0451,A1,A1 Antenna Disconnected,blind
+BRD_0452,F1,F1 Blown,blind
+BRD_0453,U4,U4 WiFi Dead,blind
+BRD_0454,Q1,Q1 MOSFET Short,blind
+BRD_0455,U3,U3 Buck Failure,blind
+BRD_0456,J1,J1 USB Short,blind
+BRD_0457,U1,U1 MCU Dead,blind
+BRD_0458,U4,U4 WiFi Dead,blind
+BRD_0459,J1,J1 USB Short,blind
+BRD_0460,R12,R12 Thermistor Open,blind
+BRD_0461,Q1,Q1 MOSFET Short,blind
+BRD_0462,U6,I2C Bus Short,blind
+BRD_0463,R12,R12 Thermistor Open,blind
+BRD_0464,U5,U5 SPI Flash Open,blind
+BRD_0465,U5,U5 SPI Flash Open,blind
+BRD_0466,U1,U1 MCU Dead,blind
+BRD_0467,L1,L1 Open,blind
+BRD_0468,U5,U5 SPI Flash Open,blind
+BRD_0469,F1,F1 Blown,blind
+BRD_0470,U5,U5 SPI Flash Open,blind
+BRD_0471,C2,C2 Decoupling Short,blind
+BRD_0472,U4,U4 WiFi Dead,blind
+BRD_0473,C1,C1 Bulk Cap Open,blind
+BRD_0474,L1,L1 Open,blind
+BRD_0475,C1,C1 Bulk Cap Open,blind
+BRD_0476,A1,A1 Antenna Disconnected,blind
+BRD_0477,U2,U2 LDO Failure,blind
+BRD_0478,R12,R12 Thermistor Open,blind
+BRD_0479,U6,I2C Bus Short,blind
+BRD_0480,Q1,Q1 MOSFET Short,blind
+BRD_0481,J1,J1 USB Short,blind
+BRD_0482,R12,R12 Thermistor Open,blind
+BRD_0483,U6,I2C Bus Short,blind
+BRD_0484,F1,F1 Blown,blind
+BRD_0485,F1,F1 Blown,blind
+BRD_0486,C2,C2 Decoupling Short,blind
+BRD_0487,Q1,Q1 MOSFET Short,blind
+BRD_0488,U2,U2 LDO Failure,blind
+BRD_0489,A1,A1 Antenna Disconnected,blind
+BRD_0490,U2,U2 LDO Failure,blind
+BRD_0491,U2,U2 LDO Failure,blind
+BRD_0492,A1,A1 Antenna Disconnected,blind
+BRD_0493,C1,C1 Bulk Cap Open,blind
+BRD_0494,J1,J1 USB Short,blind
+BRD_0495,U3,U3 Buck Failure,blind
+BRD_0496,F1,F1 Blown,blind
+BRD_0497,U5,U5 SPI Flash Open,blind
+BRD_0498,J1,J1 USB Short,blind
+BRD_0499,U6,I2C Bus Short,blind

@@ -1,0 +1,41 @@
+{
+  "weights": {
+    "history": 0.6,
+    "net": 0.35,
+    "topology": 0.05,
+    "criticality": 0.0,
+    "category": 0.0
+  },
+  "uncertainty_gap": 15.0,
+  "notes_bonus": 10.0,
+  "multi_fault": {
+    "coverage_threshold": 0.7,
+    "min_primary_nets": 2,
+    "min_domains": 3,
+    "pair_search_top_n": 5,
+    "parsimony_penalty": 6.0,
+    "pair_improvement_min": 15.0
+  },
+  "ood": {
+    "known_threshold": 0.45,
+    "partially_novel_threshold": 0.25,
+    "min_matches_for_known": 2
+  },
+  "next_best_test": {
+    "risk_penalty": {
+      "LOW": 1.0,
+      "MEDIUM": 1.5,
+      "HIGH": 2.5
+    },
+    "effort_penalty": {
+      "LOW": 1.0,
+      "MEDIUM": 1.5,
+      "HIGH": 2.0
+    },
+    "separation_both_expected": 30.0,
+    "separation_one_expected": 100.0,
+    "separation_net_probe": 55.0
+  },
+  "weights_note": "Learned from 300 labeled training boards (grid search over the full weight simplex, step 0.05); selected and retained on the 100-board validation holdout. The blind TEST set is reported only and never influences selection or retention. Policy fallback: {'history': 0.35, 'net': 0.3, 'topology': 0.2, 'criticality': 0.1, 'category': 0.05}.",
+  "known_error_codes": ["VAL", "FNC", "OPN", "SHT"]
+}

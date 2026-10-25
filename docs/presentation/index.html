@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CircuitMind — PS01 PCB Fault Diagnosis · Team Dragons</title>
+<style>
+  :root {
+    --bg: #0a0e14; --panel: #10161f; --panel2: #151d29; --line: #223042;
+    --text: #dbe4f0; --dim: #8b9bb4; --accent: #33e0c8; --warn: #f5a623; --danger: #ff5d5d;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+  .deck { width: 100vw; height: 100vh; overflow: hidden; position: relative; }
+  .slide { position: absolute; inset: 0; padding: 5vh 6vw; display: flex; flex-direction: column;
+           justify-content: center; opacity: 0; transform: translateX(40px); transition: all .45s ease; }
+  .slide.active { opacity: 1; transform: none; }
+  h1 { font-size: clamp(1.6rem, 4vw, 3rem); letter-spacing: .02em; }
+  h2 { font-size: clamp(1.1rem, 2.2vw, 1.6rem); color: var(--accent); margin-bottom: 1.2em; letter-spacing: .08em; text-transform: uppercase; }
+  h3 { margin: 1.2em 0 .4em; color: var(--text); }
+  p, li { line-height: 1.55; color: var(--text); }
+  ul { margin-left: 1.4em; }
+  .muted { color: var(--dim); font-size: .92em; }
+  .accent { color: var(--accent); }
+  .warn { color: var(--warn); }
+  .big { font-size: clamp(1.8rem, 5vw, 3.4rem); font-weight: 700; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 1.4em; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+  .card .k { color: var(--dim); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; }
+  .card .v { font-size: 1.35rem; font-weight: 700; margin-top: 4px; }
+  table { border-collapse: collapse; width: 100%; margin-top: 1em; font-size: .92rem; }
+  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+  th { color: var(--dim); font-weight: 600; letter-spacing: .04em; }
+  .pipe { font-family: 'SFMono-Regular', Consolas, monospace; font-size: .82rem; color: var(--accent);
+          background: var(--panel2); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; line-height: 1.6; white-space: pre-wrap; }
+  .tag { display: inline-block; background: var(--panel2); border: 1px solid var(--line); color: var(--accent);
+         border-radius: 999px; padding: 2px 10px; font-size: .75rem; margin: 2px 4px 2px 0; }
+  .nav { position: fixed; bottom: 18px; right: 24px; color: var(--dim); font-size: .8rem; z-index: 10; }
+  .dots { position: fixed; bottom: 18px; left: 24px; display: flex; gap: 8px; z-index: 10; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); cursor: pointer; }
+  .dot.on { background: var(--accent); }
+  .quote { border-left: 3px solid var(--accent); padding-left: 16px; font-style: italic; color: var(--text); }
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+  <!-- 1 -->
+  <section class="slide active">
+    <h2>AI Domain-X Challenge 2026 · PS01 · Team Dragons (#6)</h2>
+    <h1>CIRCUITMIND</h1>
+    <p class="big">Explainable PCB Failure Investigation<br>&amp; Root-Cause Diagnosis Engine</p>
+    <p class="quote" style="margin-top:1.4em">"Don't diagnose the symptom. Reconstruct the failure."</p>
+    <p class="muted" style="margin-top:1em">Deterministic AI · case-based reasoning · evidence fusion · fully offline</p>
+  </section>
+
+  <!-- 2 -->
+  <section class="slide">
+    <h2>1 · The problem</h2>
+    <p class="big" style="font-size:clamp(1.3rem,2.6vw,2rem)">ICT/FCT test logs tell a factory <span class="accent">what</span> failed — not <span class="accent">why</span>.</p>
+    <ul>
+      <li>A failed board produces 11 test steps across 4 electrical domains, 20 components</li>
+      <li>When the engineer who understood the failure history retires, that knowledge walks out the door</li>
+      <li>Every wrong call costs parts, rework hours, and trust</li>
+    </ul>
+    <h3>The question</h3>
+    <p>Can AI reconstruct <b>why</b> a board failed — from what the test machine <b>measured</b> — and tell a technician <b>what to do next</b>, with evidence?</p>
+  </section>
+
+  <!-- 3 -->
+  <section class="slide">
+    <h2>2 · The AI approach</h2>
+    <p><b>Case-Based Reasoning</b> (Aamodt &amp; Plaza, 1994) — a recognized AI paradigm, built for auditability:</p>
+    <div class="grid">
+      <div class="card"><div class="k">1 · Retrieve</div><div class="v">TF-IDF</div><p class="muted">150 repair cases × failure steps + deviation severity + error codes</p></div>
+      <div class="card"><div class="k">2 · Reuse</div><div class="v">Fusion</div><p class="muted">history · net · topology · BOM criticality · category</p></div>
+      <div class="card"><div class="k">3 · Revise</div><div class="v">Challenge</div><p class="muted">contradictions, abstention, Next-Best-Test</p></div>
+      <div class="card"><div class="k">4 · Retain</div><div class="v">Verify</div><p class="muted">repair + retest PASS + technician confirmation only</p></div>
+    </div>
+    <p style="margin-top:1em"><b>One learned component:</b> the fusion weights — grid search on 300 labeled boards, selected on a 100-board holdout. <span class="warn">The blind test set never influences selection.</span></p>
+    <p><b>Why not an LLM as the authority?</b> A hallucinated component on physical hardware has real cost. Every score here is reconstructible by hand.</p>
+  </section>
+
+  <!-- 4 -->
+  <section class="slide">
+    <h2>3 · Architecture</h2>
+    <div class="pipe">CSV test log
+ → Schema adapter           ICT/FCT variants, ABORT ≠ failure
+ → Failure signature        Failure DNA: deviations · domains · severity
+ → Topology DAG             electrical + functional dependency + observability
+ → Semantic memory          TF-IDF retrieval + pattern signals
+ → Evidence fusion          ranked hypotheses · 5 streams
+ → Fault modes              component + mechanism (connectivity ≠ causality)
+ → Multi-fault / OOD / DQ   solve · abstain · gate
+ → Next Best Test           cheapest safe separating measurement
+ → Narrative + PDF/CSV + React console</div>
+  </section>
+
+  <!-- 5 -->
+  <section class="slide">
+    <h2>4 · Results — reproducible, not claimed</h2>
+    <table>
+      <tr><th>Benchmark</th><th>Top-1</th><th>Top-3</th><th class="muted">Notes</th></tr>
+      <tr><td>Instance holdout (blind, 100)</td><td><b>88.0%</b></td><td><b>100%</b></td><td class="muted">MRR 0.92 · NDCG@3 0.94 · 0 silent misses</td></tr>
+      <tr><td>Reserve test (untouched, 100)</td><td><b>85.0%</b></td><td><b>100%</b></td><td class="muted">fresh seed · never seen by anything</td></tr>
+      <tr><td>Family holdout (unseen faults)</td><td>49.0%</td><td>84.7%</td><td class="muted">the honest generalization boundary</td></tr>
+      <tr><td>Adversarial / OOD</td><td>—</td><td>—</td><td class="muted">NOVEL → abstains · tester ≠ board</td></tr>
+      <tr><td>Latency</td><td colspan="3"><b>~5 ms/board</b> (median 5.0 ms · p95 10 ms · offline)</td></tr>
+    </table>
+    <p class="muted" style="margin-top:.8em">Baselines, same blind split: majority 6% · exact-pattern 88% · Jaccard 88% · retrieval-only 52%. Parity with pattern matching is disclosed — the discriminating benchmark is where the evidence architecture separates (56% vs 44% chance, 100% top-3).</p>
+  </section>
+
+  <!-- 6 -->
+  <section class="slide">
+    <h2>5 · What's different</h2>
+    <ul>
+      <li><b>Connectivity ≠ causality</b> — a component explains a failure only when its <i>mechanism</i> reaches it (U3 explains 4/4 by mechanism; L1/C1 only 1/4)</li>
+      <li><b>Alibi system</b> — argues against its own runner-up; cleared suspects shown</li>
+      <li><b>Abstention</b> — NOVEL / RED data quality / close hypotheses → "I don't know" + safest next measurement</li>
+      <li><b>Failure or tester?</b> — fleet patterns separate a bad board from a bad fixture: "don't rework the board yet"</li>
+      <li><b>Verified learning</b> — memory grows only from confirmed repairs</li>
+      <li><b>Minimum accusation principle</b> — never invent extra faults without cause</li>
+    </ul>
+  </section>
+
+  <!-- 7 -->
+  <section class="slide">
+    <h2>6 · Validation honesty</h2>
+    <ul>
+      <li>Clean protocol: <b>train → fit · validation → select · test → report only</b>; fresh reserve set (seed 20260731) is the final untouched number</li>
+      <li>No leakage: blind boards never enter the retrieval corpus; the signal check is measured (88.0/100.0 identical with them excluded)</li>
+      <li>Every number in this deck traces to a reproducible command in <span class="tag">validation/</span></li>
+      <li>Confidence is a <b>diagnostic score</b>, calibrated empirically by tier (Strong 86% on the untouched reserve) — never claimed as probability</li>
+    </ul>
+    <h3>The question we answer in Q&amp;A</h3>
+    <p class="quote">"A lookup table doesn't argue against itself. CircuitMind shows you <b>why</b> this component, <b>why not</b> the runner-up, and <b>what would change its mind</b>."</p>
+  </section>
+
+  <!-- 8 -->
+  <section class="slide">
+    <h2>7 · The investigation loop</h2>
+    <div class="pipe">FAILED BOARD → TEST INTEGRITY → FAILURE DNA → CAUSAL RECONSTRUCTION
+→ HYPOTHESES → HISTORICAL PRECEDENT → MECHANISM CHECK
+→ WHY THIS / WHY NOT → WHAT WOULD CHANGE MY MIND? → NEXT BEST TEST
+→ COUNTERFACTUAL → VERIFY REPAIR → VERIFIED MEMORY</div>
+    <h3>Live demo beats</h3>
+    <span class="tag">60-second race</span><span class="tag">"U3 has no alibi"</span><span class="tag">Beat-the-Machine (server-gated truth)</span><span class="tag">failure-or-tester lot</span><span class="tag">the novel board that abstains</span>
+  </section>
+
+  <!-- 9 -->
+  <section class="slide">
+    <h2>8 · Why believe it</h2>
+    <div class="grid">
+      <div class="card"><div class="k">Tests</div><div class="v">41 / 41</div><p class="muted">regression tests for every fix</p></div>
+      <div class="card"><div class="k">Determinism</div><div class="v">Offline</div><p class="muted">same input → same output, every machine</p></div>
+      <div class="card"><div class="k">Traceability</div><div class="v">Ledger</div><p class="muted">every score decomposes into named streams</p></div>
+      <div class="card"><div class="k">Claims</div><div class="v">Registry</div><p class="muted">every number traces to a command</p></div>
+    </div>
+    <p class="big" style="font-size:clamp(1.2rem,2.4vw,1.8rem); margin-top:1.2em">CircuitMind doesn't stop at ranking a component.<br>It explains why, argues against the runner-up, tells you what would change its mind — <span class="accent">and knows when it doesn't know.</span></p>
+  </section>
+
+</div>
+<div class="dots" id="dots"></div>
+<div class="nav">← → to navigate · Team Dragons · PS01</div>
+<script>
+  const slides = [...document.querySelectorAll('.slide')];
+  const dots = document.getElementById('dots');
+  let i = 0;
+  slides.forEach((_, idx) => { const d = document.createElement('div'); d.className = 'dot' + (idx === 0 ? ' on' : ''); d.onclick = () => go(idx); dots.appendChild(d); });
+  function go(n) {
+    i = (n + slides.length) % slides.length;
+    slides.forEach((s, k) => s.classList.toggle('active', k === i));
+    [...dots.children].forEach((d, k) => d.classList.toggle('on', k === i));
+  }
+  window.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); go(i + 1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); go(i - 1); }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# CircuitMind runtime dependencies (Python 3.9+)
+# Pinned to the exact versions the app was validated on.
+# Install:  python3 -m pip install -r requirements.txt
+streamlit==1.35.0
+pandas==2.2.0
+numpy==1.26.4
+scikit-learn==1.4.0
+networkx==3.2.1
+fpdf2==2.7.9

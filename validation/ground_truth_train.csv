@@ -1,0 +1,301 @@
+board_id,root_cause,scenario,split
+BRD_0000,J1,J1 USB Short,train
+BRD_0001,J1,J1 USB Short,train
+BRD_0002,A1,A1 Antenna Disconnected,train
+BRD_0003,U6,I2C Bus Short,train
+BRD_0004,C1,C1 Bulk Cap Open,train
+BRD_0005,C1,C1 Bulk Cap Open,train
+BRD_0006,U6,I2C Bus Short,train
+BRD_0007,Q1,Q1 MOSFET Short,train
+BRD_0008,R1,R1 Pullup Open,train
+BRD_0009,F1,F1 Blown,train
+BRD_0010,A1,A1 Antenna Disconnected,train
+BRD_0011,C1,C1 Bulk Cap Open,train
+BRD_0012,A1,A1 Antenna Disconnected,train
+BRD_0013,Q1,Q1 MOSFET Short,train
+BRD_0014,L1,L1 Open,train
+BRD_0015,U6,I2C Bus Short,train
+BRD_0016,U3,U3 Buck Failure,train
+BRD_0017,R12,R12 Thermistor Open,train
+BRD_0018,C1,C1 Bulk Cap Open,train
+BRD_0019,C2,C2 Decoupling Short,train
+BRD_0020,F1,F1 Blown,train
+BRD_0021,C1,C1 Bulk Cap Open,train
+BRD_0022,U2,U2 LDO Failure,train
+BRD_0023,R1,R1 Pullup Open,train
+BRD_0024,U4,U4 WiFi Dead,train
+BRD_0025,C1,C1 Bulk Cap Open,train
+BRD_0026,U2,U2 LDO Failure,train
+BRD_0027,U4,U4 WiFi Dead,train
+BRD_0028,J1,J1 USB Short,train
+BRD_0029,R12,R12 Thermistor Open,train
+BRD_0030,U2,U2 LDO Failure,train
+BRD_0031,U2,U2 LDO Failure,train
+BRD_0032,J1,J1 USB Short,train
+BRD_0033,U1,U1 MCU Dead,train
+BRD_0034,J1,J1 USB Short,train
+BRD_0035,U3,U3 Buck Failure,train
+BRD_0036,J1,J1 USB Short,train
+BRD_0037,R12,R12 Thermistor Open,train
+BRD_0038,F1,F1 Blown,train
+BRD_0039,Q1,Q1 MOSFET Short,train
+BRD_0040,U2,U2 LDO Failure,train
+BRD_0041,F1,F1 Blown,train
+BRD_0042,U1,U1 MCU Dead,train
+BRD_0043,C2,C2 Decoupling Short,train
+BRD_0044,F1,F1 Blown,train
+BRD_0045,U6,I2C Bus Short,train
+BRD_0046,F1,F1 Blown,train
+BRD_0047,U4,U4 WiFi Dead,train
+BRD_0048,U4,U4 WiFi Dead,train
+BRD_0049,R12,R12 Thermistor Open,train
+BRD_0050,U2,U2 LDO Failure,train
+BRD_0051,R1,R1 Pullup Open,train
+BRD_0052,R12,R12 Thermistor Open,train
+BRD_0053,C1,C1 Bulk Cap Open,train
+BRD_0054,A1,A1 Antenna Disconnected,train
+BRD_0055,U3,U3 Buck Failure,train
+BRD_0056,C1,C1 Bulk Cap Open,train
+BRD_0057,L1,L1 Open,train
+BRD_0058,A1,A1 Antenna Disconnected,train
+BRD_0059,A1,A1 Antenna Disconnected,train
+BRD_0060,R12,R12 Thermistor Open,train
+BRD_0061,U5,U5 SPI Flash Open,train
+BRD_0062,L1,L1 Open,train
+BRD_0063,U2,U2 LDO Failure,train
+BRD_0064,F1,F1 Blown,train
+BRD_0065,U3,U3 Buck Failure,train
+BRD_0066,U3,U3 Buck Failure,train
+BRD_0067,U3,U3 Buck Failure,train
+BRD_0068,R12,R12 Thermistor Open,train
+BRD_0069,Q1,Q1 MOSFET Short,train
+BRD_0070,A1,A1 Antenna Disconnected,train
+BRD_0071,A1,A1 Antenna Disconnected,train
+BRD_0072,U5,U5 SPI Flash Open,train
+BRD_0073,A1,A1 Antenna Disconnected,train
+BRD_0074,F1,F1 Blown,train
+BRD_0075,C1,C1 Bulk Cap Open,train
+BRD_0076,R12,R12 Thermistor Open,train
+BRD_0077,C1,C1 Bulk Cap Open,train
+BRD_0078,U1,U1 MCU Dead,train
+BRD_0079,A1,A1 Antenna Disconnected,train
+BRD_0080,U5,U5 SPI Flash Open,train
+BRD_0081,C2,C2 Decoupling Short,train
+BRD_0082,U2,U2 LDO Failure,train
+BRD_0083,J1,J1 USB Short,train
+BRD_0084,R1,R1 Pullup Open,train
+BRD_0085,C2,C2 Decoupling Short,train
+BRD_0086,U3,U3 Buck Failure,train
+BRD_0087,J1,J1 USB Short,train
+BRD_0088,U3,U3 Buck Failure,train
+BRD_0089,U4,U4 WiFi Dead,train
+BRD_0090,U3,U3 Buck Failure,train
+BRD_0091,J1,J1 USB Short,train
+BRD_0092,R1,R1 Pullup Open,train
+BRD_0093,U4,U4 WiFi Dead,train
+BRD_0094,U1,U1 MCU Dead,train
+BRD_0095,J1,J1 USB Short,train
+BRD_0096,R1,R1 Pullup Open,train
+BRD_0097,C1,C1 Bulk Cap Open,train
+BRD_0098,U1,U1 MCU Dead,train
+BRD_0099,R1,R1 Pullup Open,train
+BRD_0100,R12,R12 Thermistor Open,train
+BRD_0101,U2,U2 LDO Failure,train
+BRD_0102,Q1,Q1 MOSFET Short,train
+BRD_0103,U3,U3 Buck Failure,train
+BRD_0104,C2,C2 Decoupling Short,train
+BRD_0105,L1,L1 Open,train
+BRD_0106,F1,F1 Blown,train
+BRD_0107,U6,I2C Bus Short,train
+BRD_0108,A1,A1 Antenna Disconnected,train
+BRD_0109,U1,U1 MCU Dead,train
+BRD_0110,U3,U3 Buck Failure,train
+BRD_0111,U4,U4 WiFi Dead,train
+BRD_0112,J1,J1 USB Short,train
+BRD_0113,F1,F1 Blown,train
+BRD_0114,L1,L1 Open,train
+BRD_0115,U4,U4 WiFi Dead,train
+BRD_0116,L1,L1 Open,train
+BRD_0117,U1,U1 MCU Dead,train
+BRD_0118,U4,U4 WiFi Dead,train
+BRD_0119,U2,U2 LDO Failure,train
+BRD_0120,R12,R12 Thermistor Open,train
+BRD_0121,L1,L1 Open,train
+BRD_0122,C1,C1 Bulk Cap Open,train
+BRD_0123,R12,R12 Thermistor Open,train
+BRD_0124,A1,A1 Antenna Disconnected,train
+BRD_0125,U4,U4 WiFi Dead,train
+BRD_0126,R12,R12 Thermistor Open,train
+BRD_0127,L1,L1 Open,train
+BRD_0128,U2,U2 LDO Failure,train
+BRD_0129,U3,U3 Buck Failure,train
+BRD_0130,L1,L1 Open,train
+BRD_0131,R1,R1 Pullup Open,train
+BRD_0132,F1,F1 Blown,train
+BRD_0133,U4,U4 WiFi Dead,train
+BRD_0134,U5,U5 SPI Flash Open,train
+BRD_0135,Q1,Q1 MOSFET Short,train
+BRD_0136,R12,R12 Thermistor Open,train
+BRD_0137,A1,A1 Antenna Disconnected,train
+BRD_0138,J1,J1 USB Short,train
+BRD_0139,R1,R1 Pullup Open,train
+BRD_0140,C1,C1 Bulk Cap Open,train
+BRD_0141,R1,R1 Pullup Open,train
+BRD_0142,J1,J1 USB Short,train
+BRD_0143,Q1,Q1 MOSFET Short,train
+BRD_0144,U2,U2 LDO Failure,train
+BRD_0145,A1,A1 Antenna Disconnected,train
+BRD_0146,J1,J1 USB Short,train
+BRD_0147,C1,C1 Bulk Cap Open,train
+BRD_0148,U3,U3 Buck Failure,train
+BRD_0149,C1,C1 Bulk Cap Open,train
+BRD_0150,U2,U2 LDO Failure,train
+BRD_0151,C1,C1 Bulk Cap Open,train
+BRD_0152,C2,C2 Decoupling Short,train
+BRD_0153,U3,U3 Buck Failure,train
+BRD_0154,U3,U3 Buck Failure,train
+BRD_0155,A1,A1 Antenna Disconnected,train
+BRD_0156,R12,R12 Thermistor Open,train
+BRD_0157,C1,C1 Bulk Cap Open,train
+BRD_0158,U4,U4 WiFi Dead,train
+BRD_0159,U3,U3 Buck Failure,train
+BRD_0160,R1,R1 Pullup Open,train
+BRD_0161,F1,F1 Blown,train
+BRD_0162,U1,U1 MCU Dead,train
+BRD_0163,R12,R12 Thermistor Open,train
+BRD_0164,U5,U5 SPI Flash Open,train
+BRD_0165,U2,U2 LDO Failure,train
+BRD_0166,U1,U1 MCU Dead,train
+BRD_0167,U1,U1 MCU Dead,train
+BRD_0168,L1,L1 Open,train
+BRD_0169,J1,J1 USB Short,train
+BRD_0170,U3,U3 Buck Failure,train
+BRD_0171,U3,U3 Buck Failure,train
+BRD_0172,R12,R12 Thermistor Open,train
+BRD_0173,U3,U3 Buck Failure,train
+BRD_0174,R1,R1 Pullup Open,train
+BRD_0175,U5,U5 SPI Flash Open,train
+BRD_0176,J1,J1 USB Short,train
+BRD_0177,C2,C2 Decoupling Short,train
+BRD_0178,U1,U1 MCU Dead,train
+BRD_0179,U1,U1 MCU Dead,train
+BRD_0180,L1,L1 Open,train
+BRD_0181,C2,C2 Decoupling Short,train
+BRD_0182,U5,U5 SPI Flash Open,train
+BRD_0183,U1,U1 MCU Dead,train
+BRD_0184,Q1,Q1 MOSFET Short,train
+BRD_0185,R1,R1 Pullup Open,train
+BRD_0186,C2,C2 Decoupling Short,train
+BRD_0187,J1,J1 USB Short,train
+BRD_0188,R12,R12 Thermistor Open,train
+BRD_0189,J1,J1 USB Short,train
+BRD_0190,J1,J1 USB Short,train
+BRD_0191,Q1,Q1 MOSFET Short,train
+BRD_0192,U4,U4 WiFi Dead,train
+BRD_0193,C2,C2 Decoupling Short,train
+BRD_0194,F1,F1 Blown,train
+BRD_0195,U6,I2C Bus Short,train
+BRD_0196,C1,C1 Bulk Cap Open,train
+BRD_0197,U4,U4 WiFi Dead,train
+BRD_0198,U3,U3 Buck Failure,train
+BRD_0199,U6,I2C Bus Short,train
+BRD_0200,R12,R12 Thermistor Open,train
+BRD_0201,U5,U5 SPI Flash Open,train
+BRD_0202,A1,A1 Antenna Disconnected,train
+BRD_0203,U5,U5 SPI Flash Open,train
+BRD_0204,R1,R1 Pullup Open,train
+BRD_0205,C1,C1 Bulk Cap Open,train
+BRD_0206,Q1,Q1 MOSFET Short,train
+BRD_0207,F1,F1 Blown,train
+BRD_0208,R12,R12 Thermistor Open,train
+BRD_0209,U4,U4 WiFi Dead,train
+BRD_0210,R12,R12 Thermistor Open,train
+BRD_0211,U4,U4 WiFi Dead,train
+BRD_0212,U1,U1 MCU Dead,train
+BRD_0213,U5,U5 SPI Flash Open,train
+BRD_0214,C1,C1 Bulk Cap Open,train
+BRD_0215,U4,U4 WiFi Dead,train
+BRD_0216,F1,F1 Blown,train
+BRD_0217,A1,A1 Antenna Disconnected,train
+BRD_0218,C2,C2 Decoupling Short,train
+BRD_0219,C1,C1 Bulk Cap Open,train
+BRD_0220,U4,U4 WiFi Dead,train
+BRD_0221,U5,U5 SPI Flash Open,train
+BRD_0222,R1,R1 Pullup Open,train
+BRD_0223,F1,F1 Blown,train
+BRD_0224,C1,C1 Bulk Cap Open,train
+BRD_0225,A1,A1 Antenna Disconnected,train
+BRD_0226,R1,R1 Pullup Open,train
+BRD_0227,Q1,Q1 MOSFET Short,train
+BRD_0228,U1,U1 MCU Dead,train
+BRD_0229,J1,J1 USB Short,train
+BRD_0230,F1,F1 Blown,train
+BRD_0231,U1,U1 MCU Dead,train
+BRD_0232,C1,C1 Bulk Cap Open,train
+BRD_0233,U3,U3 Buck Failure,train
+BRD_0234,U3,U3 Buck Failure,train
+BRD_0235,C2,C2 Decoupling Short,train
+BRD_0236,A1,A1 Antenna Disconnected,train
+BRD_0237,U5,U5 SPI Flash Open,train
+BRD_0238,C1,C1 Bulk Cap Open,train
+BRD_0239,R12,R12 Thermistor Open,train
+BRD_0240,U6,I2C Bus Short,train
+BRD_0241,U6,I2C Bus Short,train
+BRD_0242,U4,U4 WiFi Dead,train
+BRD_0243,C1,C1 Bulk Cap Open,train
+BRD_0244,C1,C1 Bulk Cap Open,train
+BRD_0245,U4,U4 WiFi Dead,train
+BRD_0246,U1,U1 MCU Dead,train
+BRD_0247,U3,U3 Buck Failure,train
+BRD_0248,J1,J1 USB Short,train
+BRD_0249,J1,J1 USB Short,train
+BRD_0250,Q1,Q1 MOSFET Short,train
+BRD_0251,L1,L1 Open,train
+BRD_0252,A1,A1 Antenna Disconnected,train
+BRD_0253,C2,C2 Decoupling Short,train
+BRD_0254,R1,R1 Pullup Open,train
+BRD_0255,C1,C1 Bulk Cap Open,train
+BRD_0256,U1,U1 MCU Dead,train
+BRD_0257,R12,R12 Thermistor Open,train
+BRD_0258,U5,U5 SPI Flash Open,train
+BRD_0259,R1,R1 Pullup Open,train
+BRD_0260,U2,U2 LDO Failure,train
+BRD_0261,J1,J1 USB Short,train
+BRD_0262,L1,L1 Open,train
+BRD_0263,L1,L1 Open,train
+BRD_0264,J1,J1 USB Short,train
+BRD_0265,U5,U5 SPI Flash Open,train
+BRD_0266,U1,U1 MCU Dead,train
+BRD_0267,U5,U5 SPI Flash Open,train
+BRD_0268,U1,U1 MCU Dead,train
+BRD_0269,J1,J1 USB Short,train
+BRD_0270,C1,C1 Bulk Cap Open,train
+BRD_0271,U2,U2 LDO Failure,train
+BRD_0272,R12,R12 Thermistor Open,train
+BRD_0273,U2,U2 LDO Failure,train
+BRD_0274,C1,C1 Bulk Cap Open,train
+BRD_0275,A1,A1 Antenna Disconnected,train
+BRD_0276,J1,J1 USB Short,train
+BRD_0277,U6,I2C Bus Short,train
+BRD_0278,U3,U3 Buck Failure,train
+BRD_0279,J1,J1 USB Short,train
+BRD_0280,L1,L1 Open,train
+BRD_0281,U3,U3 Buck Failure,train
+BRD_0282,C1,C1 Bulk Cap Open,train
+BRD_0283,Q1,Q1 MOSFET Short,train
+BRD_0284,C2,C2 Decoupling Short,train
+BRD_0285,J1,J1 USB Short,train
+BRD_0286,A1,A1 Antenna Disconnected,train
+BRD_0287,L1,L1 Open,train
+BRD_0288,U2,U2 LDO Failure,train
+BRD_0289,U3,U3 Buck Failure,train
+BRD_0290,U6,I2C Bus Short,train
+BRD_0291,U2,U2 LDO Failure,train
+BRD_0292,U1,U1 MCU Dead,train
+BRD_0293,C1,C1 Bulk Cap Open,train
+BRD_0294,C1,C1 Bulk Cap Open,train
+BRD_0295,U4,U4 WiFi Dead,train
+BRD_0296,C1,C1 Bulk Cap Open,train
+BRD_0297,U1,U1 MCU Dead,train
+BRD_0298,C1,C1 Bulk Cap Open,train
+BRD_0299,R1,R1 Pullup Open,train

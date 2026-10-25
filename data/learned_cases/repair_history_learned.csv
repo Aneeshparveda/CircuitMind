@@ -1,0 +1,3 @@
+repair_id,symptom_text,failed_steps,root_cause_component,fix_action,verified
+LEARN-50D51F,"m,l;",TEST_SPI_FLASH,U5,VERIFIED-REPLACED,TRUE
+LEARN-721E70,ccx,TEST_SPI_FLASH,U5,VERIFIED-REPLACED,TRUE

@@ -1,0 +1,26 @@
+{
+  "dataset": "Reserve Test \u2014 boards never seen by any split (seed 20260731, BRD_0500+)",
+  "instances": 100,
+  "top1_accuracy": 85.0,
+  "top3_accuracy": 100.0,
+  "top5_accuracy": 100.0,
+  "mrr": 0.9,
+  "ndcg_at_3": 0.925,
+  "domain_accuracy": 99.0,
+  "calibration_by_tier": {
+    "Inconclusive": {
+      "n": 34,
+      "empirical_top1_pct": 88.2
+    },
+    "Likely": {
+      "n": 3,
+      "empirical_top1_pct": 0.0
+    },
+    "Strong match": {
+      "n": 63,
+      "empirical_top1_pct": 87.3
+    }
+  },
+  "median_inference_seconds": 0.005045,
+  "p95_inference_seconds": 0.011486
+}

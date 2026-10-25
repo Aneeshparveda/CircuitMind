@@ -1,0 +1,15 @@
+{
+  "split": "blind (100 boards, frozen)",
+  "baselines": {
+    "majority_top1": 6.0,
+    "exact_pattern_top1": 88.0,
+    "exact_pattern_abstains": 0,
+    "jaccard_top1": 88.0,
+    "jaccard_top3": 100.0,
+    "tfidf_only_top1": 62.0,
+    "tfidf_only_top3": 67.0,
+    "current_fusion_top1": 88.0,
+    "current_fusion_top3": 100.0
+  },
+  "note": "Headline parity with jaccard/exact-pattern is EXPECTED on the instance holdout (families are pattern-separable). The discriminating benchmark is where fusion must separate."
+}

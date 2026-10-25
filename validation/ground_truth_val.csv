@@ -1,0 +1,101 @@
+board_id,root_cause,scenario,split
+BRD_0300,L1,L1 Open,val
+BRD_0301,F1,F1 Blown,val
+BRD_0302,F1,F1 Blown,val
+BRD_0303,U1,U1 MCU Dead,val
+BRD_0304,J1,J1 USB Short,val
+BRD_0305,A1,A1 Antenna Disconnected,val
+BRD_0306,L1,L1 Open,val
+BRD_0307,U3,U3 Buck Failure,val
+BRD_0308,U5,U5 SPI Flash Open,val
+BRD_0309,R12,R12 Thermistor Open,val
+BRD_0310,U3,U3 Buck Failure,val
+BRD_0311,J1,J1 USB Short,val
+BRD_0312,U6,I2C Bus Short,val
+BRD_0313,U6,I2C Bus Short,val
+BRD_0314,R12,R12 Thermistor Open,val
+BRD_0315,U3,U3 Buck Failure,val
+BRD_0316,C2,C2 Decoupling Short,val
+BRD_0317,A1,A1 Antenna Disconnected,val
+BRD_0318,Q1,Q1 MOSFET Short,val
+BRD_0319,C2,C2 Decoupling Short,val
+BRD_0320,R1,R1 Pullup Open,val
+BRD_0321,U4,U4 WiFi Dead,val
+BRD_0322,F1,F1 Blown,val
+BRD_0323,R12,R12 Thermistor Open,val
+BRD_0324,Q1,Q1 MOSFET Short,val
+BRD_0325,U1,U1 MCU Dead,val
+BRD_0326,C2,C2 Decoupling Short,val
+BRD_0327,U1,U1 MCU Dead,val
+BRD_0328,U2,U2 LDO Failure,val
+BRD_0329,Q1,Q1 MOSFET Short,val
+BRD_0330,A1,A1 Antenna Disconnected,val
+BRD_0331,J1,J1 USB Short,val
+BRD_0332,J1,J1 USB Short,val
+BRD_0333,F1,F1 Blown,val
+BRD_0334,R1,R1 Pullup Open,val
+BRD_0335,C2,C2 Decoupling Short,val
+BRD_0336,R1,R1 Pullup Open,val
+BRD_0337,L1,L1 Open,val
+BRD_0338,J1,J1 USB Short,val
+BRD_0339,Q1,Q1 MOSFET Short,val
+BRD_0340,U2,U2 LDO Failure,val
+BRD_0341,U5,U5 SPI Flash Open,val
+BRD_0342,U1,U1 MCU Dead,val
+BRD_0343,Q1,Q1 MOSFET Short,val
+BRD_0344,U3,U3 Buck Failure,val
+BRD_0345,C2,C2 Decoupling Short,val
+BRD_0346,L1,L1 Open,val
+BRD_0347,C1,C1 Bulk Cap Open,val
+BRD_0348,R1,R1 Pullup Open,val
+BRD_0349,U2,U2 LDO Failure,val
+BRD_0350,F1,F1 Blown,val
+BRD_0351,Q1,Q1 MOSFET Short,val
+BRD_0352,U1,U1 MCU Dead,val
+BRD_0353,C1,C1 Bulk Cap Open,val
+BRD_0354,C2,C2 Decoupling Short,val
+BRD_0355,U5,U5 SPI Flash Open,val
+BRD_0356,C1,C1 Bulk Cap Open,val
+BRD_0357,U1,U1 MCU Dead,val
+BRD_0358,C1,C1 Bulk Cap Open,val
+BRD_0359,C1,C1 Bulk Cap Open,val
+BRD_0360,U1,U1 MCU Dead,val
+BRD_0361,U6,I2C Bus Short,val
+BRD_0362,U2,U2 LDO Failure,val
+BRD_0363,J1,J1 USB Short,val
+BRD_0364,U6,I2C Bus Short,val
+BRD_0365,Q1,Q1 MOSFET Short,val
+BRD_0366,U6,I2C Bus Short,val
+BRD_0367,R12,R12 Thermistor Open,val
+BRD_0368,F1,F1 Blown,val
+BRD_0369,U3,U3 Buck Failure,val
+BRD_0370,Q1,Q1 MOSFET Short,val
+BRD_0371,R1,R1 Pullup Open,val
+BRD_0372,U2,U2 LDO Failure,val
+BRD_0373,F1,F1 Blown,val
+BRD_0374,R1,R1 Pullup Open,val
+BRD_0375,C1,C1 Bulk Cap Open,val
+BRD_0376,R1,R1 Pullup Open,val
+BRD_0377,L1,L1 Open,val
+BRD_0378,A1,A1 Antenna Disconnected,val
+BRD_0379,C1,C1 Bulk Cap Open,val
+BRD_0380,A1,A1 Antenna Disconnected,val
+BRD_0381,L1,L1 Open,val
+BRD_0382,L1,L1 Open,val
+BRD_0383,U1,U1 MCU Dead,val
+BRD_0384,U2,U2 LDO Failure,val
+BRD_0385,R1,R1 Pullup Open,val
+BRD_0386,U5,U5 SPI Flash Open,val
+BRD_0387,R12,R12 Thermistor Open,val
+BRD_0388,U3,U3 Buck Failure,val
+BRD_0389,J1,J1 USB Short,val
+BRD_0390,U4,U4 WiFi Dead,val
+BRD_0391,R12,R12 Thermistor Open,val
+BRD_0392,U2,U2 LDO Failure,val
+BRD_0393,U6,I2C Bus Short,val
+BRD_0394,A1,A1 Antenna Disconnected,val
+BRD_0395,C1,C1 Bulk Cap Open,val
+BRD_0396,U6,I2C Bus Short,val
+BRD_0397,U5,U5 SPI Flash Open,val
+BRD_0398,U6,I2C Bus Short,val
+BRD_0399,U4,U4 WiFi Dead,val

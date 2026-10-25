@@ -1,0 +1,232 @@
+{
+  "generated_at": "2026-08-12 11:02:03",
+  "duration_seconds": 11.7,
+  "benchmarks": [
+    {
+      "name": "A. Instance Holdout (known fault families)",
+      "summary": {
+        "top1": 88.0,
+        "top3": 100.0,
+        "top5": 100.0,
+        "mrr": 0.92,
+        "ndcg_at_3": 0.94,
+        "domain": 96.0,
+        "instances": 100,
+        "avg_inference_s": 0.005996,
+        "median_inference_s": 0.005109,
+        "p95_inference_s": 0.010795,
+        "silent_misses": 0
+      }
+    },
+    {
+      "name": "B. Fault-Family Holdout (unseen families)",
+      "summary": {
+        "weighted_top1": 49.0,
+        "weighted_top3": 84.7,
+        "unweighted_top1": 42.9,
+        "unweighted_top3": 85.7,
+        "families": 14,
+        "total_boards": 98
+      },
+      "details": [
+        {
+          "family": "A1",
+          "boards": 7,
+          "top1": 100.0,
+          "top3": 100.0
+        },
+        {
+          "family": "C1",
+          "boards": 6,
+          "top1": 0.0,
+          "top3": 100.0
+        },
+        {
+          "family": "F1",
+          "boards": 9,
+          "top1": 0.0,
+          "top3": 0.0
+        },
+        {
+          "family": "J1",
+          "boards": 9,
+          "top1": 0.0,
+          "top3": 100.0
+        },
+        {
+          "family": "L1",
+          "boards": 4,
+          "top1": 0.0,
+          "top3": 100.0
+        },
+        {
+          "family": "Q1",
+          "boards": 7,
+          "top1": 100.0,
+          "top3": 100.0
+        },
+        {
+          "family": "R1",
+          "boards": 6,
+          "top1": 0.0,
+          "top3": 100.0
+        },
+        {
+          "family": "R12",
+          "boards": 10,
+          "top1": 100.0,
+          "top3": 100.0
+        },
+        {
+          "family": "U1",
+          "boards": 7,
+          "top1": 0.0,
+          "top3": 100.0
+        },
+        {
+          "family": "U2",
+          "boards": 6,
+          "top1": 100.0,
+          "top3": 100.0
+        },
+        {
+          "family": "U3",
+          "boards": 3,
+          "top1": 0.0,
+          "top3": 100.0
+        },
+        {
+          "family": "U4",
+          "boards": 6,
+          "top1": 0.0,
+          "top3": 0.0
+        },
+        {
+          "family": "U5",
+          "boards": 10,
+          "top1": 100.0,
+          "top3": 100.0
+        },
+        {
+          "family": "U6",
+          "boards": 8,
+          "top1": 100.0,
+          "top3": 100.0
+        }
+      ]
+    },
+    {
+      "name": "C/D. Adversarial + OOD",
+      "summary": {
+        "noise": {
+          "boards": 10,
+          "top1": 90.0,
+          "top3": 100.0
+        },
+        "unknown_test": {
+          "boards": 10,
+          "top1": 30.0,
+          "top3": 30.0
+        },
+        "novel_code": {
+          "boards": 10,
+          "top1": 80.0,
+          "top3": 100.0
+        },
+        "missing_value": {
+          "boards": 10,
+          "top1": 70.0,
+          "top3": 100.0
+        },
+        "missing_bom": {
+          "boards": 10,
+          "top1": 90.0,
+          "top3": 100.0
+        },
+        "multi_fault": {
+          "boards": 3,
+          "detector_flagged_pct": 100.0,
+          "solver_flagged_pct": 100.0,
+          "solver_named_both_pct": 100.0
+        },
+        "ood": {
+          "boards": 10,
+          "novelty_flagged_pct": 100.0,
+          "no_confident_novel_pct": 100.0
+        }
+      }
+    },
+    {
+      "name": "E. Ablation",
+      "summary": {
+        "full": {
+          "top1": 88.0,
+          "top3": 100.0
+        },
+        "history-only": {
+          "top1": 62.0,
+          "top3": 67.0
+        },
+        "net-only": {
+          "top1": 60.0,
+          "top3": 85.0
+        },
+        "topology-only": {
+          "top1": 43.0,
+          "top3": 85.0
+        },
+        "no-history": {
+          "top1": 60.0,
+          "top3": 85.0
+        },
+        "no-net": {
+          "top1": 64.0,
+          "top3": 92.0
+        },
+        "no-topology": {
+          "top1": 82.0,
+          "top3": 100.0
+        }
+      }
+    },
+    {
+      "name": "F. Reserve Test (final untouched split)",
+      "summary": {
+        "top1": 85.0,
+        "top3": 100.0,
+        "top5": 100.0,
+        "mrr": 0.9,
+        "ndcg_at_3": 0.925,
+        "domain": 99.0,
+        "instances": 100,
+        "median_inference_s": 0.005045,
+        "p95_inference_s": 0.011486
+      }
+    },
+    {
+      "name": "G. Baselines (frozen blind split)",
+      "summary": {
+        "majority_top1": 6.0,
+        "exact_pattern_top1": 88.0,
+        "exact_pattern_abstains": 0,
+        "jaccard_top1": 88.0,
+        "jaccard_top3": 100.0,
+        "tfidf_only_top1": 62.0,
+        "tfidf_only_top3": 67.0,
+        "current_fusion_top1": 88.0,
+        "current_fusion_top3": 100.0
+      }
+    },
+    {
+      "name": "H. Discriminating (same failed tests, different roots)",
+      "summary": {
+        "boards": 27,
+        "exact_pattern_top1": 22.2,
+        "jaccard_top1": 44.4,
+        "jaccard_top3": 100.0,
+        "engine_top1": 55.6,
+        "engine_top3": 100.0
+      }
+    }
+  ]
+}

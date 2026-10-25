@@ -1,0 +1,8 @@
+{
+  "boards": 27,
+  "exact_pattern_top1": 22.2,
+  "jaccard_top1": 44.4,
+  "jaccard_top3": 100.0,
+  "engine_top1": 55.6,
+  "engine_top3": 100.0
+}

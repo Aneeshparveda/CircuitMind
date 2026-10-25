@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.env
+.env.local
+
+# Frontend — never ship node_modules or build output (rebuild with npm run build)
+frontend-vite/node_modules/
+frontend-vite/dist/
+*.tsbuildinfo
+
+# Test / tool caches
+.pytest_cache/
+.mypy_cache/
+.nox/
+
+# macOS / editor cruft
+.DS_Store
+__MACOSX/
+*.log
+nohup.out
+
+# Local preview / agent scaffolding (never commit)
+.freebuff/
+desktop-v2.db*
+.agent/
+.agents/
+.gemini/
+.gsd/
+
+# Generated PDFs are reproducible from tools/ — do not commit by default.
+# (The data CSVs and validation JSONs in data/ and validation/ ARE
+# intentionally tracked: they are the benchmark inputs and frozen results.)
+*.pdf
+
+# Local-only sharing helper artifacts
+*.pid

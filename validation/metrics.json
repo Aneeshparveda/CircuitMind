@@ -1,0 +1,21 @@
+{
+  "dataset": "Held-Out Instance Test \u2014 Known Fault Families",
+  "instances": 100,
+  "top1_accuracy": 88.0,
+  "top3_accuracy": 100.0,
+  "top5_accuracy": 100.0,
+  "mrr": 0.92,
+  "ndcg_at_3": 0.94,
+  "domain_accuracy": 96.0,
+  "average_inference_seconds": 0.005996,
+  "median_inference_seconds": 0.005109,
+  "p95_inference_seconds": 0.010795,
+  "worst_inference_seconds": 0.013523,
+  "error_breakdown": {
+    "in_top3_but_ranked_second": 12,
+    "not_in_top3": 0,
+    "low_confidence": 6,
+    "multi_fault_flagged": 4,
+    "silent_misses": 0
+  }
+}

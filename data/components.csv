@@ -1,0 +1,21 @@
+refdes,desc,cat,net,critical,x,y
+J1,USB-C Connector,Connector,VBUS_5V,True,10,50
+F1,PTC Fuse 2A,Protection,VBUS_5V,True,20,50
+U3,TPS54331 Buck,IC,SYS_5V,True,30,50
+L1,4.7uH Inductor,Inductor,SYS_5V,True,40,50
+C1,22uF Cap,Capacitor,SYS_5V,False,45,55
+U2,LDO 3.3V,IC,SYS_3V3,True,50,40
+C2,10uF Cap,Capacitor,SYS_3V3,False,55,45
+U1,STM32G4 MCU,IC,SYS_3V3,True,70,50
+U5,SPI Flash 16MB,IC,SPI_BUS,True,85,60
+Y1,16MHz Crystal,Oscillator,SYS_3V3,True,65,60
+U4,ESP32 WiFi,IC,SYS_3V3,True,80,20
+A1,PCB Antenna,Antenna,RF_OUT,True,90,10
+U6,BME280 Env,IC,I2C_BUS,False,30,80
+U7,MPU6050 IMU,IC,I2C_BUS,False,50,80
+R1,10k Pullup,Resistor,I2C_BUS,False,40,75
+R2,10k Pullup,Resistor,I2C_BUS,False,40,78
+R12,Thermistor,Resistor,ADC_1,False,20,80
+R13,Div Resistor,Resistor,ADC_1,False,25,80
+Q1,N-Ch MOSFET,Transistor,PWM_OUT,True,80,80
+J2,Motor Conn,Connector,PWM_OUT,True,90,90
